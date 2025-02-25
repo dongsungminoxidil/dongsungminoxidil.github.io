@@ -4,19 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>내 포트폴리오</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        /* 네비게이션 바 스타일 */
+        nav {
+            background: #333;
+            color: white;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        /* 섹션 스타일 */
+        section {
+            padding: 100px 20px;
+            margin-top: 60px;
+        }
+        /* 부드러운 스크롤 효과 */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>내 포트폴리오</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">소개</a></li>
-                <li><a href="#research">연구 주제</a></li>
-                <li><a href="#papers">논문</a></li>
-                <li><a href="#projects">프로젝트</a></li>
-            </ul>
-        </nav>
-    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">소개</a></li>
+            <li><a href="#research">연구 주제</a></li>
+            <li><a href="#papers">논문</a></li>
+            <li><a href="#projects">프로젝트</a></li>
+        </ul>
+    </nav>
 
     <section id="about">
         <h2>본인 소개</h2>
@@ -43,5 +88,6 @@
             <li>프로젝트 2 - <a href="깃허브링크2">GitHub</a></li>
         </ul>
     </section>
+
 </body>
 </html>
