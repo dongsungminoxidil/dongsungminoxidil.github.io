@@ -12,55 +12,73 @@
         }
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
+            background-color: #f4f4f4;
         }
         /* 네비게이션 바 스타일 */
-        nav {
-            background: #333;
+        .navbar {
+            background: #1a1d2b;
             color: white;
-            padding: 15px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 30px;
             position: fixed;
-            width: 100%;
             top: 0;
             left: 0;
-            text-align: center;
+            width: 100%;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
         }
-        nav ul {
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav-links {
             list-style: none;
-            padding: 0;
+            display: flex;
         }
-        nav ul li {
-            display: inline;
+        .nav-links li {
             margin: 0 15px;
         }
-        nav ul li a {
+        .nav-links a {
             color: white;
             text-decoration: none;
             font-size: 18px;
         }
-        nav ul li a:hover {
+        .nav-links a:hover {
             text-decoration: underline;
         }
-        /* 섹션 스타일 */
+        /* 우측 버튼 */
+        .nav-button {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .nav-button:hover {
+            background: white;
+            color: #1a1d2b;
+        }
+        /* 섹션 기본 스타일 */
         section {
             padding: 100px 20px;
-            margin-top: 60px;
-        }
-        /* 부드러운 스크롤 효과 */
-        html {
-            scroll-behavior: smooth;
+            margin-top: 80px;
         }
     </style>
 </head>
 <body>
 
-    <nav>
-        <ul>
+    <nav class="navbar">
+        <div class="logo">Logo</div>
+        <ul class="nav-links">
             <li><a href="#about">소개</a></li>
             <li><a href="#research">연구 주제</a></li>
             <li><a href="#papers">논문</a></li>
             <li><a href="#projects">프로젝트</a></li>
         </ul>
+        <button class="nav-button">=test= ⌄</button>
     </nav>
 
     <section id="about">
