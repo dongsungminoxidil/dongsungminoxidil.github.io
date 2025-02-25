@@ -20,7 +20,7 @@
             color: white;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center; /* 가운데 정렬 */
             padding: 15px 30px;
             position: fixed;
             top: 0;
@@ -31,6 +31,7 @@
         .logo {
             font-size: 24px;
             font-weight: bold;
+            margin-right: auto; /* 왼쪽 정렬 */
         }
         .nav-links {
             list-style: none;
@@ -47,20 +48,6 @@
         .nav-links a:hover {
             text-decoration: underline;
         }
-        /* 우측 버튼 */
-        .nav-button {
-            background: transparent;
-            border: 2px solid white;
-            color: white;
-            padding: 8px 15px;
-            border-radius: 20px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .nav-button:hover {
-            background: white;
-            color: #1a1d2b;
-        }
         /* 섹션 기본 스타일 */
         section {
             padding: 100px 20px;
@@ -71,14 +58,13 @@
 <body>
 
     <nav class="navbar">
-        <div class="logo">Logo</div>
+        <div class="logo">홍길동</div>  <!-- 여기에 본인 이름 입력 -->
         <ul class="nav-links">
             <li><a href="#about">소개</a></li>
             <li><a href="#research">연구 주제</a></li>
             <li><a href="#papers">논문</a></li>
             <li><a href="#projects">프로젝트</a></li>
         </ul>
-        <button class="nav-button">=test= ⌄</button>
     </nav>
 
     <section id="about">
