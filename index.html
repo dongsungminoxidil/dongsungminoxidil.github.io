@@ -164,37 +164,7 @@
         </ul>
     </section>
 
-    <button onclick="topFunction()" id="topBtn" title="Go to top">↑ Top</button>
-    #topBtn {
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    font-size: 16px;
-    padding: 10px 15px;
-    background: #1a1d2b;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    display: none;
-    }
-    #topBtn:hover {
-        background: #333;
-    }
-    <script>
-    let topButton = document.getElementById("topBtn");
-    window.onscroll = function() {
-        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-            topButton.style.display = "block";
-        } else {
-            topButton.style.display = "none";
-        }
-    };
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-    </script>
+   
 
 </body>
 </html>
