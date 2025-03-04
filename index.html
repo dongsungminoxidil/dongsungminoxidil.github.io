@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-/* <html lang="ko"> */
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yoonsungbin</title>
+    <title>Yoonsungbin | AI Research & Projects</title>
     <style>
         * {
             margin: 0;
@@ -13,6 +13,7 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
+            line-height: 1.6;
         }
         /* 네비게이션 바 스타일 */
         .navbar {
@@ -43,7 +44,8 @@
         .nav-links a {
             color: white;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 20px;
+            font-weight: bold;
         }
         .nav-links a:hover {
             text-decoration: underline;
@@ -79,7 +81,7 @@
            특히 음악을 좋아하다 보니, 연구 과정에서 음악 생성과 관련된 논문을 작성하기도 했습니다.  
            아쉽게도 원하는 결과를 얻지는 못했지만, 이를 통해 많은 것을 배울 수 있었습니다.  
            또한, 공모전 등에 참가하면서 다양한 AI 프로젝트를 진행한 경험이 있습니다.</p>-->
-        <p>While attending university, I became interested in AI and worked as an undergraduate research student for about a year. I liked music, so I wrote a paper related to music generation during the research process. Unfortunately, I did not get the desired result,
+        <p>While attending university, I became interested in AI and worked as an undergraduate research student for about a year. Since I love music, I conducted research and wrote a paper on music generation. Unfortunately, I did not get the desired result,
             but I could learn a lot from it. In addition, 
             I have experience working on various AI projects while participating in competitions.</p>
 
@@ -90,7 +92,7 @@
             이를 구현하기 위해 Diff-SVC를 활용한 AI 모델을 구현하려 생각 중이며, 관련 논문을 읽고 있습니다. 
             또한, 군내에서 AI를 활용한 공모전에 참가하려합니다. 군 관련 규정이나 교범을 쉽게 확인할 수 있도록 돕는 GPT를 제작하는 것을 목표로 하여 군 AI 공모전이 열리면 참가할 예정입니다. 
             이와 함께 군 내 자격증 제도를 활용하여 정보처리기능사 자격증을 준비하고 있습니다.</p>-->
-        <p>Even though I understand the principles of neural networks, there were areas where the principle of operation did not reach during actual learning and implementation. 
+        <p>Even though I understand the principles of neural networks, some aspects were unclear during actual training and implementation.
             To solve this problem, I am currently studying by reading a book called '파이썬 날코딩으로 알고 짜는 딥러닝'. 
             I'm going to conduct research that can be done personally in the military. I  like singer Jang Bum-Joon, and I thought, 'How would it feel to sing Jang Bum-joon's recent song when he was a busker busker?' 
             To implement this, I am thinking of implementing an AI model using Diff-SVC, and I am reading related papers. 
@@ -122,7 +124,7 @@
             장기적으로는 이미지를 보고 그에 맞는 음악을 생성하는 멀티모달 모델을 통해 자동차 주행 때 풍경에 따라 음악을 생성해 틀어주는 모델을 만들면 어떨까 하는 생각을 하고 있습니다.</p>-->
         <p>'m not as interested in music generation, but I'm also interested in computer vision. Since I didn't have many opportunities to hold music-related contests, I often worked on projects related to object detection. 
            I didn't build the model myself, but I think it's attractive to have a sense of accomplishment when you recognize objects as you want through fine tuning. 
-            In the long run, I am thinking about creating a model that generates music according to the scenery when driving a car through a multimodal model that generates music according to images.</p>
+            In the long run, I am thinking about developing a multimodal AI model that generates music based on the scenery while driving.</p>
     </section>
 
     <section id="papers">
@@ -162,7 +164,37 @@
         </ul>
     </section>
 
-
+    <button onclick="topFunction()" id="topBtn" title="Go to top">↑ Top</button>
+    #topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    font-size: 16px;
+    padding: 10px 15px;
+    background: #1a1d2b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    }
+    #topBtn:hover {
+        background: #333;
+    }
+    <script>
+    let topButton = document.getElementById("topBtn");
+    window.onscroll = function() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            topButton.style.display = "block";
+        } else {
+            topButton.style.display = "none";
+        }
+    };
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
 
 </body>
 </html>
