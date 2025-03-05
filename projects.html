@@ -3,30 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Yoonsungbin</title>
-    
+    <title>Projects | Yoonsungbin</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>Project 1 - Palletizing Robot</li>
-            <video width="640" height="360" controls>
-            <source src="<https://dongsungminoxidil.github.io/palletizingrobot.mp4>" type="video/mp4">
-            브라우저가 영상을 지원하지 않습니다.
-            </video>
-            <!--<p>물체를 인식하여 옮기는 팔레타이징 로봇을 만드는 프로젝트입니다. 'yolact'을 기반으로 한 모델을 통해 객체 인식을 하여 좌표 값을 계산한 뒤, 아두이노를 통해 모터를 제어하여 물체를 지정된 위치로 이동시킵니다.</p>-->
-            <p>This project involves creating a palletizing robot that recognizes and moves objects. Using a model based on 'YOLACT,' the robot calculates coordinate values to recognize objects and then controls the motor via Arduino to move them to designated positions.</p>
-            <li>Project 2 - Self-driving Electric scooter System</li>
-            <video width="640" height="360" controls>
-            <source src="<https://dongsungminoxidil.github.io/engineeringfesta.mp4>" type="video/mp4">
-            브라우저가 영상을 지원하지 않습니다.
-            </video>
-            <!--<p>전동 킥보드를 위한 자율 주행 프로젝트입니다. 'yolo v5'를 기반으로 한 모델을 통해 사람이나 자동차 같은 충돌 위험요소를 카메라로 인식거나, 계단이나 푹 파인 곳 같이 위험한 곳 앞에서 라이다로 인식하면 아두이노를 통해 모터를 제어해 멈춤으로써
-                전동 킥보드 탑승자의 안전을 지켜주는 시스템을 구현하였습니다.</p>-->
-            <p>This is a self-driving project for electric scooters. Using the 'YOLO v5 model, the system detects collision risk factors such as pedestrians or cars through a camera. Additionally, it identifies dangerous areas, such as stairs or deep cuts, using LiDAR. If a risk is detected, the motor is controlled via Arduino to stop the kickboard.
-            We have implemented a system to ensure the safety of electric scooter passengers.</p>
-        </ul>
-    </section>
+
+<nav class="navbar">
+    <div class="logo">Yoonsungbin</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research Interests</a></li>
+        <li><a href="papers.html">Paper</a></li>
+    </ul>
+</nav>
+
+<section>
+    <h2>Projects</h2>
+    <ul>
+        <li>Project 1 - Palletizing Robot</li>
+        <li>Project 2 - Self-driving Electric scooter System</li>
+    </ul>
+</section>
+
 </body>
 </html>
