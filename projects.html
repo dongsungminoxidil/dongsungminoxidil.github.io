@@ -48,9 +48,8 @@
             <li>Wrote the paper in English</li>
             <li>Presented the paper in English</li>
         </ul>
-        <h4>Results / Lessons Learned / Improvements</h4>
+        <h4>Lessons Learned / Improvements</h4>
         <ul>
-            <li>Implemented a model that generates music based on genre input</li>
             <li>Recognized the importance of having a deep understanding of the domain to distinguish whether issues stem from model architecture or dataset quality</li>
             <li>Learned that improving the model cannot lead to significant performance gains when the dataset quality is low</li>
             <li>Found that improving the dataset is often more effective than modifying the model architecture for performance enhancement</li>
@@ -65,9 +64,8 @@
             <li>논문 영어로 발표</li>
         </ul>
         
-        <h4>결과 / 배운 점 / 개선안</h4>
+        <h4>배운 점 / 개선안</h4>
         <ul>
-            <li>장르 입력에 따라 음악을 생성하는 모델 구현</li>
             <li>도메인에 대한 충분한 이해가 필요함. 그래야 모델 문제인지 데이터셋 문제인지 빠르게 판단 가능</li>
             <li>데이터셋의 질이 낮으면 모델 구조를 개선하더라도 성능 향상에 한계가 있음</li>
             <li>모델 구조 개선보다 데이터셋 개선이 성능 향상에 더 효과적임</li>
@@ -83,6 +81,37 @@
         </video>
         <!--<p>물체를 인식하여 옮기는 팔레타이징 로봇을 만드는 프로젝트입니다. 'yolact'을 기반으로 한 모델을 통해 객체 인식을 하여 좌표 값을 계산한 뒤, 아두이노를 통해 모터를 제어하여 물체를 지정된 위치로 이동시킵니다.</p>-->
         <p>This project involves creating a palletizing robot that recognizes and moves objects. Using a model based on 'YOLACT,' the robot calculates coordinate values to recognize objects and then controls the motor via Arduino to move them to designated positions.</p>
+        <h4>Project Duration</h4>
+        <p>2022.03~2022.08</p>
+        <h4>Work I Did</h4>
+        <ul>
+            <li>Implemented an object-grabbing algorithm</li>
+            <li>Integrated the camera and controlled motors using Arduino</li>
+        </ul>
+        
+        <h4>Lessons Learned / Improvements</h4>
+        <ul>
+            <li>Since the rotation angle of the robotic arm varies depending on the object's location, segmentation is more efficient than object detection</li>
+            <li>By improving the grabbing algorithm, the robot can be enhanced to handle objects of various shapes</li>
+            <li>By calculating joint angles using tools such as a linkage simulator and controlling the robotic arm accordingly, the palletizing robot can be used even in narrow spaces</li>
+        </ul>
+
+        <!--
+        <h4>진행한 일</h4>
+        <ul>
+            <li>물건 집는 알고리즘 구현</li>
+            <li>아두이노를 통한 카메라 연동 및 모터 제어</li>
+        </ul>
+        
+        <h4>배운 점 / 개선안</h4>
+        <ul>
+            <li>물체 위치에 따라 로봇팔 회전 정도가 달라지므로 Object Detection보다는 Segmentation이 효율적임</li>
+            <li>물건 집는 알고리즘을 수정하여 다양한 모양의 물체를 집도록 개선 가능</li>
+            <li>Linkage Simulator 등을 통해 로봇팔 관절 각도를 계산하여 제어한다면 좁은 공간에서도 팔레타이징 로봇 활용 가능</li>
+        </ul>-->
+
+
+        
         <h3>Project 2 - Self-driving Electric scooter System</h3>
         <video width="640" height="360" controls>
         <source src="https://dongsungminoxidil.github.io/engineeringfesta.mp4" type="video/mp4">
@@ -92,6 +121,9 @@
             전동 킥보드 탑승자의 안전을 지켜주는 시스템을 구현하였습니다.</p>-->
         <p>This is a self-driving project for electric scooters. Using the 'YOLO v5 model, the system detects collision risk factors such as pedestrians or cars through a camera. Additionally, it identifies dangerous areas, such as stairs or deep cuts, using LiDAR. If a risk is detected, the motor is controlled via Arduino to stop the kickboard.
         We have implemented a system to ensure the safety of electric scooter passengers.</p>
+        <h4>Project Duration</h4>
+        <p>23.09~23.12</p>
+        
     </ul>
 </section>
 
