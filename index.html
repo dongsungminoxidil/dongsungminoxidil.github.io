@@ -105,33 +105,11 @@
     <li>Phone: 010-2101-7713</li>
     </ul>
 </section>
-<script>
-let currentLang = "en";
-
-const langButton = document.getElementById("langToggle");
-
-function updateButtonText() {
-    langButton.innerText =
-        currentLang === "en" ? "한국어로 보기" : "View in English";
-}
-
-langButton.addEventListener("click", () => {
-    currentLang = currentLang === "en" ? "ko" : "en";
-
-    document.querySelectorAll("[data-ko]").forEach(el => {
-        el.textContent = el.dataset[currentLang];
-    });
-
-    document.documentElement.lang = currentLang; // 접근성
-    updateButtonText();
-});
-
-// 초기 버튼 상태 설정
-updateButtonText();
-</script>
+<script src="lang.js"></script>    
 
 </body>
 </html>
+
 
 
 
