@@ -1,4 +1,3 @@
-<script>
 (function () {
     const DEFAULT_LANG = "en";
     let currentLang = localStorage.getItem("lang") || DEFAULT_LANG;
@@ -31,4 +30,3 @@
         applyLanguage();
     });
 })();
-</script>
