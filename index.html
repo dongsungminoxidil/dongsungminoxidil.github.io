@@ -35,18 +35,21 @@
 <nav class="navbar">
     <div class="logo">Yoonsungbin</div>
     <ul class="nav-links">
-        <li><a href="/">About</a></li>
-        <li><a href="research.html">Research Interests</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li><a href="/" data-ko="소개" data-en="About">About</a></li>
+        <li><a href="research.html" data-ko="연구 관심사" data-en="Research Interests">Research Interests</a></li>
+        <li><a href="projects.html" data-ko="프로젝트" data-en="Projects">Projects</a></li>
     </ul>
+    <button id="langToggle" style="margin-left:20px;">EN</button>
 </nav>
 
 <section id="about">
-    <h2>About</h2>
-    <!--<p>안녕하세요. 저는 2000년 12월 8일에 태어났습니다. 2024년에 영남대학교 전자공학과를 졸업하였습니다. 현재 AI 엔지니어에 관심을 갖고 있습니다</p>-->
-    <p>Hello. I was born on December 8, 2000. I graduated from the Department of Electronic Engineering at Yeungnam University in 2024.</p><p></p>I am currently interested in AI Engineer.</p>
-    <h4>Tools & Skills</h4>
-
+    <h2 data-ko="소개" data-en="About">About</h2>
+    <p
+  data-ko="안녕하세요. 저는 2000년 12월 8일에 태어났으며, 2024년에 영남대학교 전자공학과를 졸업했습니다. 현재 AI 엔지니어에 관심을 가지고 있습니다."
+  data-en="Hello. I was born on December 8, 2000. I graduated from the Department of Electronic Engineering at Yeungnam University in 2024. I am currently interested in becoming an AI Engineer.">
+  Hello. I was born on December 8, 2000. I graduated from the Department of Electronic Engineering at Yeungnam University in 2024. I am currently interested in becoming an AI Engineer.
+</p>
+    <h4 data-ko="기술" data-en="Skills">Skills</h4>
     <ul>
         <li><strong>AI / ML</strong>
             <ul>
@@ -66,28 +69,42 @@
 
 
 
-    <h4>Certificate</h4>
+    <h4 data-ko="자격증" data-en="Certificate">Certificate</h4>
     <ul>
         <li>Computer Specialist in Spreadsheet & Database Level-1</li>
         <li>AICE ASSOCIATE
         <li>(preparing) Craftsman Information Processing</li>
     </ul>
 
-    <h4>Hobby</h4>
+    <h4 data-ko="취미" data-en="Hobby">Hobby</h4>
     <!--<p>중학교 이후로 밴드부 활동을 하면서 기타 연주와 노래를 즐겼습니다.
        음악을 직접 연주하는 것을 좋아하며, 이는 제 관심 연구 주제와도 연결되는 부분입니다.</p>-->
     <p>Since middle school, I have enjoyed playing guitar and singing while working in a band. I like to play music in person, which is also linked to my research interests</p>
     
     
-    <h4>Contact</h4>
+    <h4 data-ko="Contact" data-en="Contact">Contact</h4>
     <ul>
     <li>Email : ysb120883@gmail.com</li>
     <li>Phone: 010-2101-7713</li>
     </ul>
 </section>
+<script>
+let currentLang = "en";
+
+document.getElementById("langToggle").addEventListener("click", () => {
+    currentLang = currentLang === "en" ? "ko" : "en";
+    document.getElementById("langToggle").innerText =
+        currentLang === "en" ? "EN" : "KO";
+
+    document.querySelectorAll("[data-ko]").forEach(el => {
+        el.textContent = el.dataset[currentLang];
+    });
+});
+</script>
 
 </body>
 </html>
+
 
 
 
